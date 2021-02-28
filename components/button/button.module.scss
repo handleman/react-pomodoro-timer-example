@@ -1,0 +1,58 @@
+@use '../../styles/colors';
+
+button {
+    display: block;
+    border: 2px solid colors.$averageColor;
+    background-color: white;
+    color: colors.$averageColor;
+    font-size: 1em;
+    font-weight: bold;
+    padding: .5em 1em;
+    border-radius: 10px;
+    transition: border-color .3s, color .3s, background-color .3s;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+    cursor: pointer;
+
+    &:hover {
+        border-color: lighten(colors.$averageColor, 10%);
+        color: lighten(colors.$averageColor, 10%);
+    }
+
+    &:active {
+        border-color: lighten(colors.$averageColor, 5%);
+        color: lighten(colors.$averageColor, 5%);
+        box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
+    }
+
+    &.primary {
+        background-color: colors.$primaryColor;
+        border-color: colors.$primaryColor;
+        color: white;
+
+        &:hover {
+            background-color: lighten(colors.$primaryColor, 10%);
+            border-color: lighten(colors.$primaryColor, 10%);
+        }
+
+        &:active {
+            background-color: lighten(colors.$primaryColor, 5%);
+            border-color: lighten(colors.$primaryColor, 5%);
+        }
+    }
+
+    &.accent {
+        background-color: colors.$accentColor;
+        border-color: colors.$accentColor;
+        color: white;
+
+        &:hover {
+            background-color: lighten(colors.$accentColor, 10%);
+            border-color: lighten(colors.$accentColor, 10%);
+        }
+
+        &:active {
+            background-color: lighten(colors.$accentColor, 5%);
+            border-color: lighten(colors.$accentColor, 5%);
+        }
+    }
+}
