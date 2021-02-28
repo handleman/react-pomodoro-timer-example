@@ -3,6 +3,17 @@ import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
-    <div><h1>pomodoro</h1></div>
+    <div className="timer-panel">
+
+      <h1>pomodoro</h1>
+      <style jsx>{`
+        .timer-panel{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+      `}
+      </style>
+    </div>
   )
 }
