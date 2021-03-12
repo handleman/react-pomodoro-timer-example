@@ -1,5 +1,12 @@
+import { Nav } from '../nav/Nav'
+import styles from './layout.module.scss'
+
 export function Layout(props) {
+    const { children } = props;
     return (
-        <div>layout</div>
+        <>
+            <Nav></Nav>
+            <main className={styles.main}>{children}</main>
+        </>
     )
 }
