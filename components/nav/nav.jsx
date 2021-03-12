@@ -1,12 +1,13 @@
 import styles from './nav.module.scss';
+import Link from 'next/link';
 
 export function Nav(props) {
 
     return (
         <nav className={styles.nav}>
             <ul>
-                <li><a>timer</a></li>
-                <li><a>config</a></li>
+                <li><Link href="/"><a>timer</a></Link></li>
+                <li><Link href="/config"><a>config</a></Link></li>
             </ul>
         </nav>
     )

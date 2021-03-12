@@ -20,12 +20,12 @@
         float: left;
     }
 
-    [aria-current] {
+    .current {
         position: relative;
         display: inline-block;
     }
 
-    [aria-current]::after {
+    .current::after {
         position: absolute;
         content: '';
         width: calc(100% - 1em);
