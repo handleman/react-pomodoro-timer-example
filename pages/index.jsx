@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 
+// todo: head title
+
 export default function Home() {
   return (
     <div className="timer-panel">
