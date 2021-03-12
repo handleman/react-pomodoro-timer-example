@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-export function Pomodoro(props) {
-
-    return (
-        <div>pomodoro</div>
-    )
-=======
 import styles from './pomodoro.module.scss'
 export function Pomodoro(props) {
     const minutes = 25;
@@ -16,5 +9,4 @@ export function Pomodoro(props) {
             </div>
         </div>
     );
->>>>>>> 1400a2b41f88899436f3685cd9f496a6f16cdac3
 }
