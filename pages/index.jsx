@@ -11,9 +11,9 @@ export default function Home() {
     <div className={styles.timerPanel}>
       <Pomodoro></Pomodoro>
       <TimerControlsPanel>
-        <Button>Run</Button>
+        <Button primary>Run</Button>
         <Button>Pause</Button>
-        <Button>Reset</Button>
+        <Button accent>Reset</Button>
       </TimerControlsPanel>
     </div>
   )
