@@ -5,6 +5,7 @@ export function TimerControlsPanel(props) {
 
     return (
         <div className={styles.controls}>
+
             {children}
             <style jsx globlal>{`
                 .${styles.controls} button{
