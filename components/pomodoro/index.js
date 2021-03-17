@@ -1,1 +1,1 @@
-export { Pomodoro } from './Pomodoro'
+export { Pomodoro } from './pomodoro'

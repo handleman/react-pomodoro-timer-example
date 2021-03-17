@@ -1,1 +1,1 @@
-export { TimerControlsPanel } from './TimerControlsPanel'
+export { TimerControlsPanel } from './timerControlsPanel'

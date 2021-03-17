@@ -1,4 +1,4 @@
-import { Nav } from '../nav/Nav'
+import { Nav } from '../nav'
 import styles from './layout.module.scss'
 
 export function Layout(props) {
