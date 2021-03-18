@@ -5,8 +5,8 @@ import { TimerControlsPanel } from '../components/timerControlsPanel'
 import { Button } from '../components/button'
 
 // todo: head title
-
-export default function Home() {
+// todo: move code out to '/features/countdown'
+export default function Index() {
   return (
     <div className={styles.timerPanel}>
       <Pomodoro></Pomodoro>

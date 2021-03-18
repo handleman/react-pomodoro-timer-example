@@ -1,6 +1,8 @@
 import Head from 'next/head'
 
-export default function Home() {
+// todo: head title
+// todo: move code out to '/features/timer'
+export default function Config() {
     return (
         <div>
             <form className="config-panel">
