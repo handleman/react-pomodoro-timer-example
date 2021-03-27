@@ -20,6 +20,9 @@ export const timerSlice = createSlice({
     }
 })
 
+export const selectActiveState = state => state.timer.active;
+export const selectPausedState = state => state.timer.paused;
+
 export const {
     setActive,
     setOnPause,
