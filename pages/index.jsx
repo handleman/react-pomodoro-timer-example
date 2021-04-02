@@ -28,6 +28,9 @@ export default function Index() {
 
   return (
     <div className={styles.timerPanel}>
+      <Head>
+        <title>Pomodoro timer tracker</title>
+      </Head>
       <Pomodoro></Pomodoro>
       <TimerControlsPanel>
         {

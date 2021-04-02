@@ -5,6 +5,9 @@ import Head from 'next/head'
 export default function Config() {
     return (
         <div>
+            <Head>
+                <title>Pomodoro timer configuration</title>
+            </Head>
             <form className="config-panel">
                 <h2>Please adjust timer and rest intervals </h2>
                 <h3>(in minutes)</h3>
