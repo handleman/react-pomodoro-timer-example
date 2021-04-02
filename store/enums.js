@@ -1,5 +1,5 @@
 export const COUNTDOWN_STATE = {
     ACTIVE: 'ACTIVE',
-    PASSIVE: 'PASSIVE',
+    PAUSED: 'PAUSED',
     RESET: 'RESET',
 }

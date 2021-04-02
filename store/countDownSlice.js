@@ -28,6 +28,8 @@ export const countDownSlice = createSlice({
 
 });
 
+export const selectRestMode = state => state.countDown.restMode;
+
 export const {
     setStatus,
     setMinutes,
