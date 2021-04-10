@@ -34,7 +34,7 @@ export default function Index() {
       <Pomodoro></Pomodoro>
       <TimerControlsPanel>
         {
-          isTimerReadyForUse && <Button primary onClick={handleStartTimer}>Run</Button>
+          (isTimerReadyForUse || isTImerOnPause) && <Button primary onClick={handleStartTimer}>Run</Button>
         }
         {
           isTimerInUse && <Button onClick={handlePauseTimer}>Pause</Button>
