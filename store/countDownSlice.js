@@ -34,6 +34,7 @@ export const selectSeconds = state => state.countDown.seconds;
 export const selectInterval = state => state.countDown.interval;
 export const selectRestInterval = state => state.countDown.rest;
 export const selectedStatus = state => state.countDown.status;
+export const selectRest = state => state.countDown.rest;
 
 export const {
     setStatus,

@@ -1,8 +1,35 @@
 import Head from 'next/head'
+import { useSelector, useDispatch } from 'react-redux';
+import { selectInterval, setInterval, selectRest, setRest, setMinutes } from '../store/countDownSlice';
+import { reset } from '../store/timerSlice';
 
-// todo: head title
-// todo: move code out to '/features/timer'
 export default function Config() {
+    // form that takes interval values for pomodoro timer and resting mode
+    // take interval and rest values from state and put it in templat
+    const dispatch = useDispatch();
+    const interval = useSelector(selectInterval);
+    const rest = useSelector(selectRest);
+
+
+    //  each form element has its own handler fired on onChange
+    // interval time input handler
+    const intervalChange = event => {
+        // gets the value from input p
+        // input could be taken from event.target object
+        const value = event.target.value;
+        // update the stete for interval
+        dispatch(setInterval(value));
+        // update state for minutes
+        dispatch(setMinutes(value))
+        // update state for timer as reset in order to restart interface for pomodoro
+        dispatch(reset());
+    }
+
+    const restChange = event => {
+        const value = event.target.value;
+        dispatch(setRest(value));
+        dispatch(reset());
+    }
     return (
         <div>
             <Head>
@@ -14,11 +41,11 @@ export default function Config() {
                 <label htmlFor="interval">
                     Timer:
                 </label>
-                <input type="number" name="interval" id="interval" />
+                <input type="number" name="interval" id="interval" value={interval} onChange={intervalChange} />
                 <label htmlFor="rest">
                     Rest:
                 </label>
-                <input type="number" name="rest" id="rest" />
+                <input type="number" name="rest" id="rest" value={rest} onChange={restChange} />
 
                 </form>
                 <style jsx lang="scss">{`
